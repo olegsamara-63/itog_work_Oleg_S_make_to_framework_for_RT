@@ -1,0 +1,131 @@
+{
+  "report_date": "2025-08-31T05:14:56.086123",
+  "total_tests": 9,
+  "passed_tests": 6,
+  "failed_tests": 3,
+  "success_rate": 66.66666666666666,
+  "test_results": [
+    {
+      "test_name": "test_create_user_success",
+      "status": "PASSED",
+      "timestamp": "2025-08-31T05:14:52.124130",
+      "response_status": 200,
+      "expected_status": 200,
+      "response_body": {
+        "code": 200,
+        "type": "unknown",
+        "message": "7686"
+      },
+      "notes": ""
+    },
+    {
+      "test_name": "test_create_user_invalid_data",
+      "status": "FAILED",
+      "timestamp": "2025-08-31T05:14:52.394523",
+      "response_status": 200,
+      "expected_status": "error expected",
+      "response_body": {
+        "code": 200,
+        "type": "unknown",
+        "message": "0"
+      },
+      "notes": "\u041d\u0435 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043d\u0430 \u043d\u0435\u0432\u0430\u043b\u0438\u0434\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435"
+    },
+    {
+      "test_name": "test_login_success",
+      "status": "PASSED",
+      "timestamp": "2025-08-31T05:14:53.622168",
+      "response_status": 200,
+      "expected_status": 200,
+      "response_body": {
+        "code": 200,
+        "type": "unknown",
+        "message": "logged in user session:1756602893536"
+      },
+      "notes": ""
+    },
+    {
+      "test_name": "test_logout_success",
+      "status": "PASSED",
+      "timestamp": "2025-08-31T05:14:53.833137",
+      "response_status": 200,
+      "expected_status": 200,
+      "response_body": {
+        "code": 200,
+        "type": "unknown",
+        "message": "ok"
+      },
+      "notes": ""
+    },
+    {
+      "test_name": "test_login_invalid_credentials",
+      "status": "FAILED",
+      "timestamp": "2025-08-31T05:14:54.000846",
+      "response_status": 200,
+      "expected_status": "error expected",
+      "response_body": {
+        "code": 200,
+        "type": "unknown",
+        "message": "logged in user session:1756602893912"
+      },
+      "notes": "\u041d\u0435 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043d\u0435\u0432\u0435\u0440\u043d\u044b\u0445 \u0443\u0447\u0435\u0442\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445"
+    },
+    {
+      "test_name": "test_update_user_success",
+      "status": "PASSED",
+      "timestamp": "2025-08-31T05:14:55.260845",
+      "response_status": 200,
+      "expected_status": 200,
+      "response_body": {
+        "code": 200,
+        "type": "unknown",
+        "message": "9519"
+      },
+      "notes": ""
+    },
+    {
+      "test_name": "test_verify_update",
+      "status": "FAILED",
+      "timestamp": "2025-08-31T05:14:55.478034",
+      "response_status": 200,
+      "expected_status": 200,
+      "response_body": {
+        "id": 9519,
+        "username": "yvonnepeters",
+        "firstName": "Ernest",
+        "lastName": "Hansen",
+        "email": "hatfieldstacey@example.net",
+        "password": "6zz0UTp4m(HN",
+        "phone": "001-936-896-6272x8745",
+        "userStatus": 1
+      },
+      "notes": "\u0414\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f \u043d\u0435 \u043e\u0431\u043d\u043e\u0432\u0438\u043b\u0438\u0441\u044c"
+    },
+    {
+      "test_name": "test_delete_user_success",
+      "status": "PASSED",
+      "timestamp": "2025-08-31T05:14:55.877286",
+      "response_status": 200,
+      "expected_status": 200,
+      "response_body": {
+        "code": 200,
+        "type": "unknown",
+        "message": "daniellereilly"
+      },
+      "notes": ""
+    },
+    {
+      "test_name": "test_verify_deletion",
+      "status": "PASSED",
+      "timestamp": "2025-08-31T05:14:56.082267",
+      "response_status": 404,
+      "expected_status": 404,
+      "response_body": {
+        "code": 1,
+        "type": "error",
+        "message": "User not found"
+      },
+      "notes": ""
+    }
+  ]
+}
